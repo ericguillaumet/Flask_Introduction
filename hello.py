@@ -54,9 +54,9 @@ def calculator(n1, n2, op):
     elif op == "division":
         return render_template("hello.html", result = f"The division of {n1} and {n2} equals {n1 / n2}")
 
-@app.route("/primerhtml/<nombre>")
-def callhtml(nombre):
-    return render_template("hello.html",name = nombre)
+@app.route("/firsthtml/<name>")
+def callhtml(name):
+    return render_template("hello.html",n = name)
 """
 @app.route("/firsthtml/<nombre>")
 def callhtml(nombre):
